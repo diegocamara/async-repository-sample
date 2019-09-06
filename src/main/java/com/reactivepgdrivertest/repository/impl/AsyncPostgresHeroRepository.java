@@ -15,11 +15,11 @@ import io.reactivex.Completable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
 
-public class AsyncPostgreHeroRepository implements HeroRepository {
+public class AsyncPostgresHeroRepository implements HeroRepository {
 
     private PgPool pgClient;
 
-    public AsyncPostgreHeroRepository(PgPool pgClient) {
+    public AsyncPostgresHeroRepository(PgPool pgClient) {
         this.pgClient = pgClient;
     }
 

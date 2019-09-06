@@ -3,7 +3,7 @@ package com.reactivepgdrivertest.repository;
 import com.reactivepgdrivertest.AbstractTest;
 import com.reactivepgdrivertest.entity.Hero;
 import com.reactivepgdrivertest.exception.OperationFailException;
-import com.reactivepgdrivertest.repository.impl.AsyncPostgreHeroRepository;
+import com.reactivepgdrivertest.repository.impl.AsyncPostgresHeroRepository;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,7 +23,7 @@ public class AsyncPostgresHeroRepositoryTest extends AbstractTest {
 
     @BeforeEach
     public void beforeEach() {
-        this.heroRepository = new AsyncPostgreHeroRepository(pgClient);
+        this.heroRepository = new AsyncPostgresHeroRepository(pgClient);
     }
 
     @Test
